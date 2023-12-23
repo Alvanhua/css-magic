@@ -1,0 +1,29 @@
+{
+  "name": "css-magic",
+  "description": "用CSS带你领略世界的美",
+  "author": {
+    "name": "binshao996@qq.com"
+  },
+  "repository": {
+    "url": "https://github.com/binshao996/css-magic"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "bootstrap": "pnpm i",
+    "start": "node scripts/index.js start",
+    "clean": "lerna clean && npx rimraf node_modules"
+  },
+  "devDependencies": {
+    "axios": "^1.4.0",
+    "dotenv-safe": "^8.2.0",
+    "glob": "^10.2.7",
+    "lerna": "^6.6.2",
+    "rimraf": "^5.0.1",
+    "run-node": "^1.0.0",
+    "yargs": "^17.7.2",
+    "parcel-bundler": "^1.12.5"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
