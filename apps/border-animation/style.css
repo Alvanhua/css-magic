@@ -1,0 +1,109 @@
+html,body {
+  position: relative;
+  margin-left: 120px;
+  margin-top: 60px;
+  background-color: #010101;
+}
+
+.wrap {
+  position: relative;
+  width: 500px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f8f7fa;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 4px solid #211f28;
+  background-color: #0d101a;
+}
+
+.box {
+  position: relative;
+  padding: 20px 35px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.border-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #ec107e, #fcc23f);
+  animation: animate-border-top 2s linear infinite;
+}
+
+@keyframes animate-border-top {
+  0% { 
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.border-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(to bottom,#ec107e, #fcc23f);
+  animation: animate-border-right 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate-border-right {
+  0% { 
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.border-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left, #ec107e, #fcc23f);
+  animation: animate-border-bottom 2s linear infinite;
+}
+
+@keyframes animate-border-bottom {
+  0% { 
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.border-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(to top ,#ec107e, #fcc23f);
+  animation: animate-border-left 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate-border-left {
+  0% { 
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
