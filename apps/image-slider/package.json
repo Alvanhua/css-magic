@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html --port 3005"
+    "start": "parcel index.html --port 3006"
   },
   "keywords": [],
   "author": "",
