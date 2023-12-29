@@ -1,0 +1,62 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+html,body {
+  position: relative;
+  margin-left: 120px;
+  margin-top: 60px;
+  background-color: #010101;
+}
+
+.wrap {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f8f7fa;
+  border-radius: 5px;
+  border: 2px solid #211f28;
+  background-color: #0d101a;
+}
+
+.container {
+  background: #2f3640;
+  padding: 10px; 
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  background: none;
+  border: none;
+  transition: 0.4s;
+  width: 0px;
+  outline: none;
+  text-indent: 10px;
+  color: #fff;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+}
+
+i {
+  margin-left: -2px;
+}
+
+.container:hover input {
+  width: 240px;
+}
+
+.container:hover button {
+  background: #f0b23a;
+}
+
