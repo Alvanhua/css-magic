@@ -1,0 +1,106 @@
+html, body {
+    background-color: #263038;
+}
+
+:root {
+    --speed: 0.5s;
+    --grey: #ffffff40;
+    --white: #ffffff;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 32px 0 #fff, -32px 0 #fff;
+    position: relative;
+    animation: flash var(--speed) ease-in infinite alternate;
+}
+
+.loader::before,
+.loader::after {
+    content: '';
+    position: absolute;
+    left: -64px;
+    top: 0;
+    background: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transform-origin: 35px -35px;
+    transform: rotate(45deg);
+    animation: hitL var(--speed) ease-in infinite alternate;
+}
+
+.loader::after {
+    left: 64px;
+    transform: rotate(-45deg);
+    transform-origin: -35px -35px;
+    animation: hitR var(--speed) ease-out infinite alternate;
+}
+
+@keyframes flash {
+    0%,
+    100% {
+        background-color: var(--grey);
+        box-shadow: 
+            32px 0 var(--grey),
+            -32px 0 var(--grey);
+    }
+
+    25% {
+        background-color: var(--grey);
+        box-shadow: 
+            32px 0 var(--grey),
+            -32px 0 var(--white);
+    }
+
+    50% {
+        background-color: var(--white);
+        box-shadow: 
+            32px 0 var(--grey),
+            -32px 0 var(--grey);
+    }
+
+    75% {
+        background-color: var(--grey);
+        box-shadow: 
+            32px 0 var(--white),
+            -32px 0 var(--grey);
+    }
+}
+
+@keyframes hitL {
+    0% {
+        transform: rotate(45deg);
+        background-color: var(--white);
+    }
+
+    25%,
+    100% {
+        transform: rotate(0deg);
+        background-color: var(--grey);
+    }
+}
+
+@keyframes hitR {
+    0%,
+    75% {
+        transform: rotate(0deg);
+        background-color: var(--grey);
+    }
+
+    100% {
+        transform: rotate(-45deg);
+        background-color: var(--white);
+    }
+}
