@@ -25,3 +25,18 @@
 
 ### 图像滑块
 ![image-slider](./apps/image-slider/slider.gif)
+
+### 边框动画
+![border-animation](./apps/border-animation/border-animation.gif)
+
+### 新年倒计时
+![countdown](./apps/countdown-new-year/count-down.gif)
+
+### 浮动标签
+![floating-label](./apps/floating-label/floating-label.gif)
+
+### 魔幻导航菜单
+![navigation-menu](./apps/navigation-menu/navigation-menu.gif)
+
+### 牛顿摆Loading
+![newton-cradle-loading](./apps/newton-cradle-loader/newton-cradle-loader.gif)
