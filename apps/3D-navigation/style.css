@@ -1,3 +1,4 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
 a {
   user-select: none;
   color: #fff;
@@ -6,22 +7,17 @@ a {
 html, body {
   background-color: #3a3e47;
 }
+
 ul {
   margin-top: 60px;
   margin-left: 300px; 
   color: #fff;
-}
-ul li {
-  cursor: pointer;
-}
-
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
-ul {
   position: relative;
   transform: skewY(-15deg);
 }
 
 li {
+  cursor: pointer;
   position: relative;
   list-style: none;
   width: 200px;
