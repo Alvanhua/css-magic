@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-color: #20192a;
+}
+
+:root {
+  --earth-orbit: 3s;
+}
+
+.system {
+  position: relative;
+  width: 700px;
+  padding-top: 700px;
+}
+
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid #ffffff4d;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  animation: spin infinite linear both;
+}
+
+.orbit-sun {
+  border: none;
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.planet {
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  transform: translateY(-50%);
+}
+
+.orbit:nth-child(1) {
+  width: calc(10%);
+  height: calc(10%);
+}
+
+.orbit:nth-child(2) {
+  width: calc(20%);
+  height: calc(20%);
+}
+
+.orbit:nth-child(3) {
+  width: calc(30%);
+  height: calc(30%);
+}
+
+.orbit:nth-child(4) {
+  width: calc(40%);
+  height: calc(40%);
+}
+
+.orbit:nth-child(5) {
+  width: calc(50%);
+  height: calc(50%);
+}
+
+.orbit:nth-child(6) {
+  width: calc(60%);
+  height: calc(60%);
+}
+
+.orbit:nth-child(7) {
+  width: calc(70%);
+  height: calc(70%);
+}
+
+.orbit:nth-child(8) {
+  width: calc(80%);
+  height: calc(80%);
+}
+
+.orbit:nth-child(9) {
+  width: calc(90%);
+  height: calc(90%);
+}
+
+.orbit:nth-child(10) {
+  width: calc(100%);
+  height: calc(100%);
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.orbit-mercury {
+  animation-duration: calc(0.24 * var(--earth-orbit));
+}
+
+.orbit-venus {
+  animation-duration: calc(0.62 * var(--earth-orbit));
+}
+
+.orbit-earth {
+  animation-duration: var(--earth-orbit);
+}
+
+.orbit-mars {
+  animation-duration: calc(1.88 * var(--earth-orbit));
+}
+
+.orbit-jupiter {
+  animation-duration: calc(11.87 * var(--earth-orbit));
+}
+
+.orbit-saturn {
+  animation-duration: calc(29.47 * var(--earth-orbit));
+}
+
+.orbit-urganus {
+  animation-duration: calc(87.07 * var(--earth-orbit));
+}
+
+.orbit-neptune {
+  animation-duration: calc(164.9 * var(--earth-orbit));
+}
+
+.orbit-pluto {
+  animation-duration: calc(248 * var(--earth-orbit));
+}
