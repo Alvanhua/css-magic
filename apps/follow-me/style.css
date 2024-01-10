@@ -6,10 +6,10 @@ html,body {
   font-family:Arial,Helvetica,sans-serif;font-size:100%;
 }
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css');
 h1, h2, h3 {
   margin: 5px 0;
 }
-@import url('https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css');
 .avatar {
   display: flex;
   flex-direction: column;
