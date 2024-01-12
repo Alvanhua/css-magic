@@ -1,0 +1,12 @@
+{
+  "name": "sun-earth-moon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --port 3029"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
