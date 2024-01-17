@@ -1,0 +1,12 @@
+{
+  "name": "animated-text-fill",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --port 3028"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
