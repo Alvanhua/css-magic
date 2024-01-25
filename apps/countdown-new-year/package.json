@@ -1,0 +1,12 @@
+{
+  "name": "dountdown-new-year",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --port 3010"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

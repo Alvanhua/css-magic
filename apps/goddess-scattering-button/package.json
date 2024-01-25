@@ -1,0 +1,12 @@
+{
+  "name": "goddess-scattering-button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --port 3018"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
